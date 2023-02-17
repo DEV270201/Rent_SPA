@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
+import Data from "../assets/Data";
 
 const Rent = () => {
     return (
@@ -13,11 +14,15 @@ const Rent = () => {
                     </div>
                     {/* cards container  */}
                     <div className="my-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+                        {
+                            Data.map((card) => {
+                                return (
+                                    <div key={card.id}>
+                                        <Card card={card} />
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
