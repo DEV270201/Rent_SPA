@@ -1,9 +1,14 @@
 import React from "react";
+import NavbarLg from "./components/Navbar/Navbar_lg";
+import Rent from "./pages/Rent";
 
 const App = () => {
   return (
     <>
-      <div className="font-bold text-3xl text-red-600">App</div>
+      <div>
+        <NavbarLg />
+        <Rent />
+      </div>
     </>
   )
 }
