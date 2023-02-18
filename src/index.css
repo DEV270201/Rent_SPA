@@ -13,3 +13,19 @@
     font-family: 'Open Sans', sans-serif;
   }
 }
+/* overriding the default date style  */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: rgb(233 213 255);
+}
+
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+input[type="date"],
+focus {
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}

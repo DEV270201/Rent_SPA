@@ -21,9 +21,9 @@ const NavbarLg = () => {
 
                 {/* content  */}
                 <div className="flex flex-1 mx-5">
-                    <div className="font-bold mx-7">Rent</div>
-                    <div className="font-bold mx-7">Buy</div>
-                    <div className="font-bold mx-7">Sell</div>
+                    <div className="font-bold mx-7 text-purple-500 bg-purple-100 p-1">Rent</div>
+                    <div className="font-bold mx-7 py-1 px-3">Buy</div>
+                    <div className="font-bold mx-7 p-1">Sell</div>
                     <div className="font-bold mx-7 flex flex-row items-center">
                         <p className="mx-1">Manage Property</p>
                         <ChevronDownIcon height={'20px'} width={'20px'} />

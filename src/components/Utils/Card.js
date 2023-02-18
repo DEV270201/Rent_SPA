@@ -13,7 +13,7 @@ const Card = ({ card }) => {
                 {/* image container  */}
                 <div className="w-[100%]">
                     <img src={card.imgUrl} alt="home"
-                        className="h-[200px] w-[100%]"
+                        className="h-[200px] w-[100%] rounded"
                     />
                 </div>
 
@@ -34,7 +34,7 @@ const Card = ({ card }) => {
                     <div className="flex flex-row justify-between items-center">
                         {/* price */}
                         <p className="text-sm text-gray-500">
-                            <span className="font-bold text-lg text-purple-500">{card.rent}</span>/month
+                            <span className="font-bold text-lg text-purple-500">{card.price}</span>/month
                         </p>
                         {/* heart */}
                         <div className="rounded-full h-[30px] w-[30px] flex justify-center items-center border border-gray-300">
