@@ -1,6 +1,7 @@
 import React from "react";
 import HomeIcon from "../Icons/Home";
 import Button from "../Utils/Button";
+import ChevronDownIcon from "../Icons/ChevronDown";
 
 const NavbarLg = () => {
 
@@ -23,8 +24,14 @@ const NavbarLg = () => {
                     <div className="font-bold mx-7">Rent</div>
                     <div className="font-bold mx-7">Buy</div>
                     <div className="font-bold mx-7">Sell</div>
-                    <div className="font-bold mx-7">Manage Property</div>
-                    <div className="font-bold mx-7">Resources</div>
+                    <div className="font-bold mx-7 flex flex-row items-center">
+                        <p className="mx-1">Manage Property</p>
+                        <ChevronDownIcon height={'20px'} width={'20px'} />
+                    </div>
+                    <div className="font-bold mx-7 flex flex-row items-center">
+                        <p className="mx-1">Resources</p>
+                        <ChevronDownIcon height={'20px'} width={'20px'} />
+                    </div>
                 </div>
 
                 {/* buttons  */}

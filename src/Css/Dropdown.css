@@ -1,0 +1,14 @@
+.item:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* initially the content will be hidden  */
+.content {
+    display: none;
+}
+
+/* on hovering the main div, content div will appear  */
+.dropdown:hover .content {
+    display: block;
+}
