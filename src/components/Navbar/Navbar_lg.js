@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../Button";
 import HomeIcon from "../Icons/Home";
+import Button from "../Utils/Button";
 
 const NavbarLg = () => {
 
@@ -11,7 +11,7 @@ const NavbarLg = () => {
     return (
         <>
             {/* outer container  */}
-            <div className="w-[100%] h-[100px] bg-white flex flex-row p-5 items-center shadow-[0_15px_20px_-15px_rgba(0,0,0,0.3)]">
+            <div className="w-[100%] h-[70px] bg-white flex flex-row p-5 items-center shadow-[0_15px_20px_-15px_rgba(0,0,0,0.3)]">
                 {/* logo  */}
                 <div className="flex flex-row items-center">
                     <HomeIcon height={'30px'} width={'30px'} />

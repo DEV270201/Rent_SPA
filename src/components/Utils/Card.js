@@ -1,22 +1,36 @@
 import React from "react";
-import HeartIcon from "./Icons/Heart";
-import BedIcon from "./Icons/Bed";
-import BathIcon from "./Icons/Bath";
-import AreaIcon from "./Icons/Area";
+import HeartIcon from "../Icons/Heart";
+import BedIcon from "../Icons/Bed";
+import BathIcon from "../Icons/Bath";
+import AreaIcon from "../Icons/Area";
+import PopularIcon from "../Icons/Popular";
 
 const Card = ({ card }) => {
     return (
         <>
             {/* outer container  */}
-            <div className="m-2 rounded bg-white flex flex-col shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+            <div className="m-2 rounded bg-white flex flex-col shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative">
                 {/* image container  */}
                 <div className="w-[100%]">
                     <img src={card.imgUrl} alt="home"
                         className="h-[200px] w-[100%]"
                     />
                 </div>
+
+                {/* isPopular container  */}
+                {
+                    card.isPopular ?
+                        <div className="absolute w-[125px] h-[25px] p-2 flex flex-row items-center rounded bg-purple-700 left-1 top-[185px]">
+                            <PopularIcon height={'20px'} width={'20px'} />
+                            <p className="text-white font-semibold text-xs">POPULAR</p>
+                        </div>
+                        :
+                        null
+
+                }
+
                 {/* content container  */}
-                <div className="w-[100%] my-2 px-4">
+                <div className="w-[100%] my-3 px-4">
                     <div className="flex flex-row justify-between items-center">
                         {/* price */}
                         <p className="text-sm text-gray-500">
