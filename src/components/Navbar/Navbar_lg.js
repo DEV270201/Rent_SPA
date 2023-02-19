@@ -12,7 +12,7 @@ const NavbarLg = () => {
     return (
         <>
             {/* outer container  */}
-            <div className="w-[100%] h-[70px] bg-white flex flex-row p-5 items-center shadow-[0_15px_20px_-15px_rgba(0,0,0,0.3)]">
+            <div className="w-[100%] sm:h-[70px] bg-white flex flex-row p-5 items-center justify-between lg:justify-around shadow-[0_15px_20px_-15px_rgba(0,0,0,0.3)]">
                 {/* logo  */}
                 <div className="flex flex-row items-center">
                     <HomeIcon height={'30px'} width={'30px'} />
@@ -20,7 +20,7 @@ const NavbarLg = () => {
                 </div>
 
                 {/* content  */}
-                <div className="flex flex-1 mx-5">
+                <div className="hidden lg:flex lg:flex-1 mx-2">
                     <div className="font-bold mx-7 text-purple-500 bg-purple-100 p-1">Rent</div>
                     <div className="font-bold mx-7 py-1 px-3">Buy</div>
                     <div className="font-bold mx-7 p-1">Sell</div>
@@ -35,7 +35,7 @@ const NavbarLg = () => {
                 </div>
 
                 {/* buttons  */}
-                <div className="flex flex-row">
+                <div className="flex flex-col justify-items-end sm:flex-row">
                     <Button height={'60px'} width={'150px'} callback={Register} text={'Login'}
                         bgColor={'bg-purple-100'} textColor={'text-purple-500'} hoverBgColor={'bg-purple-100'}
                     />
